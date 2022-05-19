@@ -368,9 +368,9 @@ footer i{
     }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 420px){
     .bg-garrafas{
-        height: 450px;    
+        height: 360px;    
         width: 100%;
     }
 
