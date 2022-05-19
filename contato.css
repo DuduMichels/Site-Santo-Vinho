@@ -1,0 +1,356 @@
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Black.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Bold.otfack.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ SemiBold.otfld.otfack.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Light.otf);
+    font-weight: 300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Bookmania;
+    font-size: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.menus{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10.5rem;
+}
+
+/*menu superior*/
+.menu-topo{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.082);
+}
+
+.img-logo{
+    width: 6rem;
+}
+
+.fa-user, .fa-shopping-cart{
+    color: #5a162e;
+    font-size: .8rem;
+}
+
+/*fim menu superior*/
+
+
+/*menu navbar*/
+.lista-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center; 
+}
+
+.item-menu{
+    font-size: .8rem;
+    padding: 1rem 2rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+.item-menu a{
+    text-decoration: none;
+    color: #5a162e;
+}
+
+.item-menu a:hover{
+    color: #333;
+    opacity: 85%;
+}
+
+/*fim menu navbar*/
+
+/*background*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/bg-topo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5a162e75;
+    
+}
+
+/*Titulo contate-nos*/
+
+.titulo-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+.titulo-contato i{
+    color:#5a162e;
+    font-size: .3rem;
+    flex-wrap: wrap;
+}
+
+.titulo-contato h1{
+    margin: 0 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform:uppercase ;
+    letter-spacing: .3rem;
+    color: #5a162e;
+}
+
+.titulo p{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #5a162e;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+/* fim titulo contate-nos*/
+
+/*box lado esquerdo*/
+.box-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem ;
+    background-color: white;
+    
+}
+
+.box-baixo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.box-endereco, .box-telefone, .box-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.box-contato i{
+    color:#5a162e;
+    font-size: 1.5rem;  
+}
+
+.box-baixo h2{
+    text-align: center;
+    color: #5a162e;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding-top: .5rem;
+}
+
+.box-contato p{
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(76, 76, 76);
+}
+/*fim box lado esquerdo*/
+
+/*box direito*/
+
+.box-cima{
+    margin: 0 5rem;
+}
+.box-cima h2{
+    color: #5a162e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+}
+
+.box-cima p{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(76, 76, 76);
+}
+
+.box-cima input{
+    width: 30rem;
+    height: 2rem;
+    background-image: url(imagens/bg-topo.png);
+    background-color: #5a162e75;
+    border-style: none;
+    border-radius: .3rem;
+    margin-top: .4rem;
+}
+
+.box-cima input::placeholder{
+    padding-left: 1rem;
+    font-family: Bookmania;
+    font-weight: 600;
+    color: #5a162eb1;
+}
+
+.box-cima textarea{
+    width: 30rem;
+    height: 6rem;
+    background-image: url(imagens/bg-topo.png);
+    background-position: center;
+    background-color: #5a162e75;
+    border-style: none;
+    border-radius: .3rem;
+    margin-top: .4rem;
+}
+
+.box-cima textarea::placeholder{
+    padding-left: 1rem;
+    font-weight: 600;
+    font-family: Bookmania;
+    
+    color: #5a162eb1;
+}
+
+.campos{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-cima button{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 2rem;
+    background-color: #5a162e;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-family: Bookmania;
+    font-weight: 400;
+    color: white;
+    border-style: none;
+    border-radius: .3rem;
+    margin-left: .3rem;
+   
+}
+
+/*rodapé*/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-top: 1px solid rgba(51, 51, 51, 0.297);
+}
+
+footer p{
+    font-size: 1rem;
+    color: #5a162e;
+    letter-spacing: .2rem;
+    margin: 0 3rem;
+}
+
+footer i{
+    margin: 0 1rem;
+    color: #5a162e;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 790px){
+    
+    .menu-hamburguer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 8.5rem;
+    }
+    
+    .linha1, .linha2, .linha3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #5a162e;
+        width: 1.2rem;
+        height: .12rem;
+        margin: .1rem;
+    }
+    
+    .item-menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    footer{
+        margin: 0 1rem;
+    }
+
+    footer p{
+        flex-wrap: wrap;
+        font-size: .7rem;
+        color: #5a162e;
+        margin: 0 1rem;
+    }
+
+    footer i{
+        margin: 0 .4rem;
+        color: #5a162e;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+   
+
+}
