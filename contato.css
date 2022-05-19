@@ -332,6 +332,20 @@ footer i{
 
 @media screen and (max-width: 500px){
 
+    .box-cima input{
+        width: 20rem;
+        height: 2rem;
+    }
+
+    .box-cima textarea{
+        width: 20rem;
+        height: 6rem;
+    }
+
+    .box-baixo{
+        gap: 1rem;
+    }
+
     footer{
         margin: 0 1rem;
     }
