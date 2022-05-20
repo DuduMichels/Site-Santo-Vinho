@@ -1,0 +1,337 @@
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Black.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Bold.otfack.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ SemiBold.otfld.otfack.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Bookmania;
+    src: url(Fontes/Bookmania\ Light.otf);
+    font-weight: 300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Bookmania;
+    font-size: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.menus{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10.5rem;
+}
+
+/*menu superior*/
+.menu-topo{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.082);
+}
+
+.img-logo{
+    width: 6rem;
+}
+
+.fa-user, .fa-shopping-cart{
+    color: #5a162e;
+    font-size: .8rem;
+}
+
+/*fim menu superior*/
+
+
+/*menu navbar*/
+.lista-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center; 
+}
+
+.item-menu{
+    font-size: .8rem;
+    padding: 1rem 2rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+.item-menu a{
+    text-decoration: none;
+    color: #5a162e;
+}
+
+.item-menu a:hover{
+    color: #333;
+    opacity: 85%;
+}
+
+/*fim menu navbar*/
+
+/*bg garrafas de vinho*/
+.imagem-vinhos{
+    background-image: url(imagens/bg-vinhos-g.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+/*vinhos*/
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.174);
+}
+
+.box-esquerdo{
+    margin: 1rem;
+}
+
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-direito h1{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform:uppercase ;
+    letter-spacing: .3rem;
+    color: #5a162e;
+}
+
+.lado-direito h2{
+    margin: .5rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding-top: .5rem;
+    background-color: #5a162e;
+    line-height: 1.1rem;
+    width: 8rem;
+    height: 2.2rem;
+}
+
+.lado-direito h3{
+    margin: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(76, 76, 76);
+}
+
+.lado-direito p{
+    margin: .5rem 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(76, 76, 76);
+}
+
+.lado-direito strong{
+    color: #5a162e;
+}
+
+.botoes-vinhos{
+    margin: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.botoes-vinhos a{
+    margin: 0 2rem;
+    text-decoration: none;
+    color: #b51d52;
+}
+
+.botoes-vinhos a:hover{
+    color: #5a162e;
+    border-bottom: .5px solid #5a162e;
+}
+
+
+/*rodapé*/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-top: 1px solid rgba(51, 51, 51, 0.297);
+}
+
+footer p{
+    font-size: 1rem;
+    color: #5a162e;
+    letter-spacing: .2rem;
+    margin: 0 3rem;
+}
+
+footer i{
+    margin: 0 1rem;
+    color: #5a162e;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 790px){
+    
+    .menu-hamburguer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 8.5rem;
+    }
+    
+    .linha1, .linha2, .linha3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #5a162e;
+        width: 1.2rem;
+        height: .12rem;
+        margin: .1rem;
+    }
+    
+    .item-menu{
+        display: none;
+    }
+
+    .imagem-vinhos{
+        background-image: url(imagens/bg-vinhos-p.png.jpg);
+    
+    }
+
+    .lado-direito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .lado-direito h1{
+        margin: 1rem 1rem;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    
+    .lado-direito h2{
+        margin: .5rem;
+
+    }
+    
+    .lado-direito h3{
+        margin: 1rem 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(76, 76, 76);
+    }
+    
+    .lado-direito p{
+        margin: .5rem 3rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(76, 76, 76);
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+
+    footer{
+        margin: 0 1rem;
+    }
+
+    footer p{
+        flex-wrap: wrap;
+        font-size: .7rem;
+        color: #5a162e;
+        margin: 0 1rem;
+    }
+
+    footer i{
+        margin: 0 .4rem;
+        color: #5a162e;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+   
+    .container{
+        flex-direction: column;
+    }
+    
+    .lado-direito h1{
+        margin: 1rem 1rem;
+        flex-wrap: wrap;
+        text-align: center;    
+    }
+    
+    .lado-direito h2{
+        margin: .5rem;
+
+    }
+    
+    .lado-direito h3{
+        margin: 1rem 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(76, 76, 76);
+    }
+    
+    .lado-direito p{
+        margin: .5rem 3rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(76, 76, 76);
+    }
+
+
+}
