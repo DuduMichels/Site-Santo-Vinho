@@ -175,6 +175,7 @@ body{
     text-align: center;
     font-size: 1rem;
     color: rgb(76, 76, 76);
+    
 }
 
 .botoes-vinhos{
@@ -250,8 +251,65 @@ body{
 }
 /*fim vinho-tinto-seco*/
 
-/*inicio instagram*/
+/*Início curiosidades*/
+#curiosidades{
+    background-color: #eadfc5;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
 
+.titulo-curiosidades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.titulo-curiosidades{
+    margin: 0px 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform:uppercase ;
+    letter-spacing: .3rem;
+    color: #5a162e;   
+}
+
+#curiosidades i{
+    color:#5a162e;
+    font-size: .3rem;
+    flex-wrap: wrap;
+    
+}
+
+.containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-curiosidades{
+    display: flex;
+    flex-direction: column;
+    margin: 50px ;
+    flex-wrap: wrap;
+}
+
+.container-curiosidades p{
+    text-align: center;
+    font-size: 1rem;
+    color: #5a162e;
+    line-height: 2rem;
+}
+
+/*fim curiosidades*/
+
+
+/*inicio instagram*/
 
 .titulo-instagram{
     display: flex;
@@ -350,6 +408,18 @@ footer i{
     .titulo{
         text-align: center;
     }
+
+    
+    .titulo-curiosidades{
+       text-align: center;
+       margin: 1rem;
+    }
+    
+    #curiosidades i{
+        flex-wrap: wrap;
+        
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -362,6 +432,7 @@ footer i{
     .titulo{
         gap: .5rem;   
     }
+
 
     .titulo-instagram{
         text-align: center;
@@ -392,5 +463,16 @@ footer i{
         width: 100%;
     }
 
+    .vinho-tinto-seco p{
+        margin: 0 1rem;
+    }
 
+    .vinho-tinto-suave p{
+        margin: 0 1rem;
+    }
+
+    .vinho-rose p{
+        margin: 0 1rem;
+    }
+    
 }
