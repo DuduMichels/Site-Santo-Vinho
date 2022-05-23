@@ -337,6 +337,12 @@ footer i{
 
 }
 
+@media screen and (max-width: 615px){
+    #mapa iframe{
+        width: 500px;
+    }
+}
+
 @media screen and (max-width: 500px){
 
     .box-cima input{
