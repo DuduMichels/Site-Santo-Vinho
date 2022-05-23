@@ -277,6 +277,15 @@ body{
    
 }
 
+/*mapa*/
+
+#mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /*rodapé*/
 footer{
     display: flex;
@@ -344,6 +353,10 @@ footer i{
         gap: 1rem;
     }
 
+    #mapa iframe{
+        width: 400px;
+    }
+
     footer{
         margin: 0 1rem;
     }
@@ -363,6 +376,8 @@ footer i{
 }
 
 @media screen and (max-width: 390px){
-   
+    #mapa iframe{
+        width: 380px;
+    }
 
 }
