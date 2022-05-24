@@ -124,6 +124,10 @@ body{
     padding-top: 2rem;
 }
 
+.inputs{
+    border-style: none;
+}
+
 .titulo-contato i{
     color:#5a162e;
     font-size: .3rem;
@@ -200,10 +204,10 @@ body{
 
 /*box direito*/
 
-.box-cima{
+.box-inputs{
     margin: 0 5rem;
 }
-.box-cima h2{
+.box-inputs h2{
     color: #5a162e;
     text-align: center;
     text-transform: uppercase;
@@ -211,70 +215,45 @@ body{
     margin-top: 2rem;
 }
 
-.box-cima p{
+.box-inputs p{
     text-align: center;
     font-size: 1rem;
     color: rgb(76, 76, 76);
 }
 
-.box-cima input{
-    width: 30rem;
-    height: 2rem;
-    background-image: url(imagens/bg-topo.png);
-    background-color: #5a162e75;
-    border-style: none;
-    border-radius: .3rem;
-    margin-top: .4rem;
-}
-
-.box-cima input::placeholder{
-    padding-left: 1rem;
-    font-family: Bookmania;
-    font-weight: 600;
-    color: #5a162eb1;
-}
-
-.box-cima textarea{
-    width: 30rem;
-    height: 6rem;
-    background-image: url(imagens/bg-topo.png);
-    background-position: center;
-    background-color: #5a162e75;
-    border-style: none;
-    border-radius: .3rem;
-    margin-top: .4rem;
-}
-
-.box-cima textarea::placeholder{
-    padding-left: 1rem;
-    font-weight: 600;
-    font-family: Bookmania;
-    
-    color: #5a162eb1;
-}
-
-.campos{
-    margin: 2rem 0;
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
-.box-cima button{
-    margin-top: 2rem;
-    width: 10rem;
+form input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
     height: 2rem;
-    background-color: #5a162e;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
+    border: 1px solid #5a162e;
+}
+
+form textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 8rem;
+    border: 1px solid #5a162e;
+}
+.botao{
+    background-color: #5a162e8c;
+    color: #5a162e;
     font-family: Bookmania;
     font-weight: 400;
-    color: white;
-    border-style: none;
-    border-radius: .3rem;
-    margin-left: .3rem;
-   
+    font-size: 1rem;
+    margin: auto;
+    
 }
 
 /*mapa*/
@@ -345,18 +324,18 @@ footer i{
 
 @media screen and (max-width: 500px){
 
-    .box-cima input{
-        width: 20rem;
-        height: 2rem;
-    }
-
-    .box-cima textarea{
-        width: 20rem;
-        height: 6rem;
-    }
 
     .box-baixo{
         gap: 1rem;
+    }
+    
+    form input{
+        width: 20rem;  
+    }
+    
+    form textarea{
+        margin: auto;
+        width: 20rem;
     }
 
     #mapa iframe{
