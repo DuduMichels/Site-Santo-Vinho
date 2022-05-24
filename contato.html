@@ -51,21 +51,24 @@
         
         <div class="box-contato">
            
-            <div class="box-cima">
+            <div class="box-inputs">
                 <h2>Envie sua mensagem</h2>
                 <p>Preencha os campos abaixo para dar início à sua solicitação!</p>
                 <div class="campos">
-                    <div class="input-nome">
-                        <input type="text" placeholder="Digite seu nome">
-                    </div>
-                    <div class="input-email">
-                        <input type="text" placeholder="Digite seu email">
-                    </div>
-                    <div class="input-mensagem">
-                        <textarea name="" placeholder="Digite sua mensagem..." id="box-texto" cols="30" rows="5"></textarea>
-                    </div>
-                    <button>Enviar</button>
-                </div>
+                    <form action="#" method="post" class="formLogin">
+                        <fieldset class="inputs">
+                        
+                            <input type="text" name="text" id="log" placeholder="Nome completo"> <br>
+                        
+                        
+                            <input type="email" required placeholder="Email"> <br>
+                        
+                            <textarea name="mensagem" id="" placeholder="Digite sua mensagem" cols="30" rows="10" style="resize: none;"> </textarea> <br>
+                        
+                        </fieldset>
+                    <input class="botao" type="submit" value="Enviar">
+                </form>
+                    
                 
                 <div class="box-baixo">
                     <div class="box-endereco">
