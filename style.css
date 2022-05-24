@@ -93,7 +93,7 @@ body{
 }
 
 .item-menu a:hover{
-    border-bottom: .5px solid #5a162e31;
+    border-bottom: .5px solid #5a162e31;   
 }
 
 /*fim menu navbar*/
@@ -115,7 +115,10 @@ body{
     top: 160px;
     left: 50%;
     transform:translateX(-50%) ;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.41,-0.32,.6,1.35);
 }
+
 /*fim sessão garrafas*/
 
 /*inicio tipos de vinhos*/
@@ -251,8 +254,8 @@ body{
 }
 /*fim vinho-tinto-seco*/
 
-/*Início curiosidades*/
-#curiosidades{
+/*Início beneficios*/
+#beneficios{
     background-color: #eadfc5;
     margin-top: 2rem;
     align-items: center;
@@ -260,7 +263,7 @@ body{
     padding-top: 2rem;
 }
 
-.titulo-curiosidades{
+.titulo-beneficios{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -269,7 +272,7 @@ body{
     
 }
 
-.titulo-curiosidades{
+.titulo-beneficios{
     margin: 0px 1rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -278,7 +281,7 @@ body{
     color: #5a162e;   
 }
 
-#curiosidades i{
+#beneficios i{
     color:#5a162e;
     font-size: .3rem;
     flex-wrap: wrap;
@@ -290,23 +293,28 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
-.container-curiosidades{
+.container-beneficios{
     display: flex;
     flex-direction: column;
     margin: 50px ;
     flex-wrap: wrap;
 }
 
-.container-curiosidades p{
+
+.container-beneficios p{
     text-align: center;
     font-size: 1rem;
     color: #5a162e;
     line-height: 2rem;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.41,-0.32,.6,1.35);  
 }
 
-/*fim curiosidades*/
+
+/*fim beneficios*/
 
 
 /*inicio instagram*/
