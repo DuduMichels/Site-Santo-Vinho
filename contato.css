@@ -253,7 +253,10 @@ form textarea{
     font-weight: 400;
     font-size: 1rem;
     margin: auto;
-    
+}
+
+.botao:hover{
+    cursor: pointer;
 }
 
 /*mapa*/
