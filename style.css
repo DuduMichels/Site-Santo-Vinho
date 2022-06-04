@@ -52,19 +52,17 @@ body{
 /*menu superior*/
 .menu-topo{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border-bottom: .5px solid rgba(0, 0, 0, 0.082);
 }
 
 .img-logo{
-    width: 6rem;
+    width: 5rem;
 }
 
 .fa-user, .fa-shopping-cart{
     color: #5a162e;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 /*fim menu superior*/
@@ -73,9 +71,7 @@ body{
 /*menu navbar*/
 .lista-menu{
     display: flex;
-    flex-direction: row;
     list-style: none;
-    align-items: center;
     justify-content: center; 
 }
 
@@ -115,8 +111,6 @@ body{
     top: 160px;
     left: 50%;
     transform:translateX(-50%) ;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(.41,-0.32,.6,1.35);
 }
 
 /*fim sessão garrafas*/
@@ -125,7 +119,6 @@ body{
 
 .titulo{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 6rem 4.5rem;
@@ -149,7 +142,6 @@ body{
 
 #vinhos-tipos{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -201,6 +193,7 @@ body{
 
 /*fim vinho rose*/
 
+
 /*vinho tinto seco*/
 .vinho-tinto-seco{
     margin: 0 5rem;
@@ -227,6 +220,7 @@ body{
     color: rgb(76, 76, 76);
 }
 /*fim vinho-tinto-seco*/
+
 
 /*vinho tinto suave*/
 .vinho-tinto-suave{
@@ -265,14 +259,9 @@ body{
 
 .titulo-beneficios{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
-}
-
-.titulo-beneficios{
     margin: 0px 1rem;
     font-size: 1.2rem;
     font-weight: 600;
