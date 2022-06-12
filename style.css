@@ -370,8 +370,10 @@ footer p{
     margin: 0 3rem;
 }
 
-footer i{
-    margin: 0 1rem;
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     color: #5a162e;
     font-size: 1rem;
 }
@@ -384,7 +386,8 @@ footer i{
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 8.5rem;
+        top: 7.5rem;
+        cursor: pointer;
     }
     
     .linha1, .linha2, .linha3{
@@ -417,6 +420,8 @@ footer i{
         
     }
 
+    
+
 }
 
 @media screen and (max-width: 500px){
@@ -441,20 +446,19 @@ footer i{
     }
 
     footer p{
-        flex-wrap: wrap;
-        font-size: .7rem;
+        font-size: .8rem;
         color: #5a162e;
         margin: 0 1rem;
     }
 
-    footer i{
-        margin: 0 .4rem;
-        color: #5a162e;
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width: 450px){
+
+    body{
+        text-align: center;
+    }
+
     .bg-garrafas{
         height: 360px;    
         width: 100%;
@@ -471,5 +475,11 @@ footer i{
     .vinho-rose p{
         margin: 0 1rem;
     }
+
+    footer{
+        flex-direction: column;
+    }
+   
+
     
 }
