@@ -420,6 +420,10 @@ footer p{
         
     }
 
+    footer{
+        flex-direction: column;
+    }
+
     
 
 }
