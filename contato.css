@@ -285,8 +285,10 @@ footer p{
     margin: 0 3rem;
 }
 
-footer i{
-    margin: 0 1rem;
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     color: #5a162e;
     font-size: 1rem;
 }
@@ -315,6 +317,10 @@ footer i{
     
     .item-menu{
         display: none;
+    }
+
+    footer{
+        flex-direction: column;
     }
 
 }
@@ -350,7 +356,6 @@ footer i{
     }
 
     footer p{
-        flex-wrap: wrap;
         font-size: .7rem;
         color: #5a162e;
         margin: 0 1rem;
@@ -359,7 +364,7 @@ footer i{
     footer i{
         margin: 0 .4rem;
         color: #5a162e;
-        font-size: 1rem;
+        font-size: .5rem;
     }
 }
 
