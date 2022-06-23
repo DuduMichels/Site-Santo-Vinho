@@ -1,4 +1,8 @@
 function menuHamburger(){
-    var btnmenu = document.querySelector('div.menu-hamburguer');
-    btnmenu.addEventListener('click', menuHamburger );
+    var btnmenu = document.querySelector('.menu-hamburguer');
+    if(btnmenu.classList.contains('open')){
+        btnmenu.classList.remove('open');
+    }else{
+        btnmenu.classList.add('open')
+    }
 }
