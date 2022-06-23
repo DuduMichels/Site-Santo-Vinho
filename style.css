@@ -92,6 +92,14 @@ body{
     border-bottom: .5px solid #5a162e31;   
 }
 
+.menu-mobile{
+    display:none ;
+}
+
+.menu-mobile-itens{
+    display: none;
+}
+
 /*fim menu navbar*/
 
 /*inicio sessão garrafas*/
@@ -381,26 +389,47 @@ footer p{
 
 @media screen and (max-width: 790px){
     
-    .menu-hamburguer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 7.5rem;
-        cursor: pointer;
+    body{
+        text-align: center;
     }
-    
-    .linha1, .linha2, .linha3{
-        display: flex;
-        flex-direction: column;
+
+    .menu-mobile{
+        display:flex;
         align-items: center;
         justify-content: center;
-        background-color: #5a162e;
-        width: 1.2rem;
-        height: .12rem;
-        margin: .1rem;
+        padding-top: 1rem;
+       
     }
-    
+    .menu-hamburguer{
+        cursor: pointer;
+    }
+
+    .menu-mobile-itens{
+        display: flex;
+        flex-direction: column;
+        line-height: 5em;
+    }
+
+    .lista-menu-mobile{
+        font-size: .8rem;
+        padding: 1rem 2rem;
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        list-style: none;
+        z-index: 99;
+        
+    }
+
+    .item-menu-mobile a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+       
+    }
+
+    .open{
+        display: flex;
+    }
+
     .item-menu{
         display: none;
     }
@@ -459,9 +488,6 @@ footer p{
 
 @media screen and (max-width: 450px){
 
-    body{
-        text-align: center;
-    }
 
     .bg-garrafas{
         height: 360px;    
